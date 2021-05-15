@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one, .two, .three, .four, .five{
+    border-radius: 100%;
+    margin: 1vw;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%, 50%, 100%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(0.8);
+    }
+}
+
+.one{
+    animation-delay: 0.4s;
+    border: 10px solid #00f;
+}
+.two{
+    animation-delay: 0.8s;
+    border: 10px solid #00f;
+}
+.three{
+    animation-delay: 1.2s;
+    border: 10px solid #00f;
+}
+.four{
+    animation-delay: 1.6s;
+    border: 10px solid #0ff;
+}
+.five{
+    animation-delay: 2.0s;
+    border: 10px solid #0ff;
+}
